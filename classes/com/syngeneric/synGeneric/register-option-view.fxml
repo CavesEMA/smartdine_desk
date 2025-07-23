@@ -132,12 +132,12 @@
                      <Font name="Arial" size="12.0" />
                   </font>
                </Label>
-               <Label layoutX="27.0" layoutY="428.0" prefHeight="28.0" prefWidth="196.0" text="Impresión de tick de alimentación:" textFill="#333333">
+               <Label layoutX="27.0" layoutY="405.0" prefHeight="28.0" prefWidth="196.0" text="Impresión de tick de alimentación:" textFill="#333333">
                   <font>
                      <Font name="Arial" size="12.0" />
                   </font>
                </Label>
-               <Label layoutX="25.0" layoutY="391.0" prefHeight="28.0" prefWidth="191.0" text="Tamaño SmartDine Marcaciones:" textFill="#333333">
+               <Label layoutX="25.0" layoutY="379.0" prefHeight="28.0" prefWidth="191.0" text="Tamaño SmartDine Marcaciones:" textFill="#333333">
                   <font>
                      <Font name="Arial" size="12.0" />
                   </font>
@@ -149,23 +149,34 @@
                   </toggleGroup>
                </RadioButton>
                <RadioButton fx:id="rb_services_not" layoutX="264.0" layoutY="355.0" mnemonicParsing="false" onAction="#getServices" selected="true" text="No" toggleGroup="$services" />
-               <RadioButton fx:id="rb_size_small" layoutX="223.0" layoutY="396.0" mnemonicParsing="false" onAction="#getSize" text="Small">
+               <RadioButton fx:id="rb_size_small" layoutX="223.0" layoutY="384.0" mnemonicParsing="false" onAction="#getSize" text="Small">
                   <toggleGroup>
                      <ToggleGroup fx:id="size" />
                   </toggleGroup>
                </RadioButton>
-               <RadioButton fx:id="rb_size_big" layoutX="289.0" layoutY="396.0" mnemonicParsing="false" onAction="#getSize" selected="true" text="Big" toggleGroup="$size" />
+               <RadioButton fx:id="rb_size_big" layoutX="289.0" layoutY="384.0" mnemonicParsing="false" onAction="#getSize" selected="true" text="Big" toggleGroup="$size" />
                <ImageView fitHeight="77.0" fitWidth="218.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../img/LogoNewCaves.png" />
                   </image>
                </ImageView>
-               <RadioButton fx:id="rb_print_yes" layoutX="224.0" layoutY="433.0" mnemonicParsing="false" onAction="#getServices" text="Si">
+               <RadioButton fx:id="rb_print_yes" layoutX="224.0" layoutY="410.0" mnemonicParsing="false" onAction="#getPrint" text="Si">
                   <toggleGroup>
                      <ToggleGroup fx:id="print" />
                   </toggleGroup>
                </RadioButton>
-               <RadioButton fx:id="rb_print_not" layoutX="263.0" layoutY="433.0" mnemonicParsing="false" onAction="#getServices" selected="true" text="No" toggleGroup="$print" />
+               <RadioButton fx:id="rb_print_not" layoutX="263.0" layoutY="410.0" mnemonicParsing="false" onAction="#getPrint" selected="true" text="No" toggleGroup="$print" />
+               <RadioButton fx:id="rb_print_usb" layoutX="194.0" layoutY="436.0" mnemonicParsing="false" onAction="#getPrintType" selected="true" text="USB">
+                  <toggleGroup>
+                     <ToggleGroup fx:id="printType" />
+                  </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="rb_print_com" layoutX="258.0" layoutY="436.0" mnemonicParsing="false" onAction="#getPrintType" text="SERIAL (COM)" toggleGroup="$printType" />
+               <Label layoutX="55.0" layoutY="430.0" prefHeight="28.0" prefWidth="138.0" text="Tipo Puerto Impresora" textFill="#333333">
+                  <font>
+                     <Font name="Arial" size="12.0" />
+                  </font>
+               </Label>
                 </children>
             </AnchorPane>
       </center>
