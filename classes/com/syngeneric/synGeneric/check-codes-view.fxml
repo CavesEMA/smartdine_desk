@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.syngeneric.controller.CheckCodesController">
+   <center>
+      <AnchorPane style="-fx-background-color: #d6d6d6;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="73.0" layoutX="20.0" layoutY="85.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1115.0" />
+            <Rectangle arcHeight="50.0" arcWidth="20.0" fill="#333333" height="34.0" layoutX="642.0" layoutY="53.0" stroke="TRANSPARENT" strokeType="INSIDE" width="480.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" focusTraversable="true" height="511.0" layoutX="24.0" layoutY="165.0" stroke="TRANSPARENT" strokeType="INSIDE" width="473.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="510.0" layoutX="504.0" layoutY="164.0" stroke="TRANSPARENT" strokeType="INSIDE" width="623.0" />
+            <Button fx:id="logoutRegister" layoutX="1103.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutButtonRegisterOnAction" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #b41814;" text="x" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="9.0" />
+               </font>
+            </Button>
+            <Text fill="#fffdfd" layoutX="655.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto:">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#333333" fontSmoothingType="LCD" layoutX="40.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="REGISTRO DE MARCACIONES" wrappingWidth="1068.6666870117188">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#333333" fontSmoothingType="LCD" layoutX="24.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="FECHA" wrappingWidth="472.0000019073485">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#696868" height="71.0" layoutX="30.0" layoutY="551.0" stroke="TRANSPARENT" strokeType="INSIDE" width="451.0" />
+            <Line endX="1017.0" layoutX="101.0" layoutY="151.0" startX="-69.66666412353516" startY="-7.62939453125E-6" stroke="#d2d1d1" />
+            <Text fill="#2f4e45" fontSmoothingType="LCD" layoutX="671.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="ESTADO:" wrappingWidth="224.0001254081725">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="614.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/tick.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="152.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="70.0" layoutX="198.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/website.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelStatusRegister" alignment="CENTER" contentDisplay="CENTER" layoutX="503.0" layoutY="611.0" prefHeight="52.0" prefWidth="619.0" text="*****************" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#333333" fontSmoothingType="LCD" layoutX="29.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="CÓDIGO:" wrappingWidth="462.00006103515625">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="130.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/number-blocks.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="getCodesText" alignment="CENTER" layoutX="41.0" layoutY="557.0" prefHeight="59.0" prefWidth="429.0" promptText="Ingrese el código a buscar">
+               <font>
+                  <Font name="Arial Black" size="26.0" />
+               </font>
+            </TextField>
+            <Label fx:id="labelDate" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="251.0" prefHeight="30.0" prefWidth="469.0" text="yyyy-mm-dd" textAlignment="CENTER">
+               <font>
+                  <Font name="Poppins Regular" size="36.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="94.0" layoutY="321.0" prefHeight="30.0" prefWidth="264.0" text="*****************" textAlignment="CENTER" textFill="TRANSPARENT">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+            <Text fill="#333333" fontSmoothingType="LCD" layoutX="27.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="HORA" wrappingWidth="467.33334350585926">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelTime" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="393.0" prefHeight="30.0" prefWidth="467.0" text="HH:mm:ss" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="155.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/clock.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" layoutX="88.0" layoutY="616.0" prefHeight="30.0" prefWidth="275.0" text="- Código Barras" textFill="#b1adad">
+               <font>
+                  <Font name="Poppins Regular" size="10.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="88.0" layoutY="632.0" prefHeight="30.0" prefWidth="275.0" text="- Cédula" textFill="#b1adad">
+               <font>
+                  <Font name="Poppins Regular" size="10.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="88.0" layoutY="649.0" prefHeight="24.0" prefWidth="275.0" text="- GIN / PKI" textFill="#b1adad">
+               <font>
+                  <Font name="Poppins Regular" size="10.0" />
+               </font>
+            </Label>
+            <Text fill="#2f4e45" fontSmoothingType="LCD" layoutX="671.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="SERVICIO:" wrappingWidth="240.00003385543812">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="618.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/meal.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelServiceRegister" alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="469.0" prefHeight="52.0" prefWidth="609.0" text="*****************" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#2a433c" fontSmoothingType="LCD" layoutX="671.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="COMENSAL:" wrappingWidth="268.66672086715687">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="56.0" fitWidth="66.0" layoutX="614.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/eating.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelDinerRegister" alignment="CENTER" contentDisplay="CENTER" layoutX="506.0" layoutY="325.0" prefHeight="52.0" prefWidth="619.0" text="*****************" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelProyectRegister" layoutX="765.0" layoutY="58.0" prefHeight="23.0" prefWidth="345.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Italic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="242.0" layoutX="386.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/letrasModelTwo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelDinerIdentification" alignment="CENTER" contentDisplay="CENTER" layoutX="505.0" layoutY="286.0" prefHeight="52.0" prefWidth="619.0" text="*****************" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

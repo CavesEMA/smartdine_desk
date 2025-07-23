@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <api>
+        <urlMain>http://localhost/cavesEMA</urlMain>
+        <urlComensal>/api_rest/smartDine/smartDineApi/getComensales</urlComensal>
+        <urlMarcaciones>/api_rest/smartDine/smartDineApi/getSaveMarcacion</urlMarcaciones>
+        <key>e111ff0e1f9e4d85912a7e739269ebc9</key>
+        <formatoFecha>yyyy-MM-dd</formatoFecha>
+        <portPrint>USB001</portPrint>
+    </api>
+</config>
+
